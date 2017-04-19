@@ -12,7 +12,7 @@ Python 2.7.5 or higher
 
 Running ADDIT-NM:
 
-usage: Addit_NM.py [-h] -i INPUT -o OUTPUT [-w WINDOW]
+usage: python Addit_NM.py [-h] -i INPUT -o OUTPUT [-w WINDOW]
                    [-t SIMILARITY_THRESHOLD] [-sh SIMILARITY_HIGH]
                    [-sl SIMILARITY_LOW] [-fh FREQUENCY_HIGH]
                    [-fl FREQUENCY_LOW]
@@ -29,7 +29,7 @@ Scikit-Learn (v0.18.1)
 Running ADDIT-M:
 Test_Model_Training.zip has to be unzipped. It contains the txt file.
 
-usage: Addit_M.py [-h] -i INPUT -tr TRAIN -o OUTPUT [-w WINDOW]
+usage: python Addit_M.py [-h] -i INPUT -tr TRAIN -o OUTPUT [-w WINDOW]
 
 Example: python Addit_M.py -i Test_Model_Missing.txt -tr Test_Model_Training.txt -o Test_Model_Imputed.txt
 
