@@ -110,23 +110,12 @@ for i in range(num_Sample):
 			lineno_3=l_allele_parent[2]
 			lineno_3=lineno_3.rstrip('\n')
 
-			# Get alleles at indices 1 and 2
-			colno_2=lineno_2.split('\t')
-			parent_2=colno_2[2]
-			colno_no2=colno_2[0].split('_')
-			alleleno_2=colno_no2[1]
-
-			colno_3=lineno_3.split('\t')
-			parent_3=colno_3[2]
-			colno_no3=colno_3[0].split('_')
-			alleleno_3=colno_no3[1]
-
 			# Check for same allele
-			if (parent_2==parent_3):
+			if (lineno_2==lineno_3):
 
 				# Key=Sample#_Index
 				keyno=str(i)+'_'+str(index)
-				dict_adjacentallele[keyno]=parent_2
+				dict_adjacentallele[keyno]=lineno_2
 				
 
 		# Check if missing at the end
